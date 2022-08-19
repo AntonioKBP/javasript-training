@@ -24,7 +24,7 @@
 // var res = num_1 - num_2;
 // console.log("minus " + res);
 
-// third try and ow to do
+// third try and how to do
 
 // var num_1 = 5;
 // var num_2 = 15;
@@ -127,5 +127,113 @@
 
 //  Lesson 7
 
-var lesson7 = 7;
-console.log("Lets Go");
+//  Massive (array)
+
+// var arr = [5, true, "stroke", -100, 5.7];  index inside [] starts from 0
+// arr[3] = "change from -100 to that";
+// console.log(arr[3]);
+
+// var arr = [5, true, "stroke", -100, 5.7];
+// arr[3] = "change from -100 to that";
+// console.log(arr.length);   show tehe lenth of massive(array) in this ex 5
+
+// var arr = [5, true, "stroke", -100, 5.7];
+// arr[3] = "change from -100 to that";
+// console.log(arr[3]);
+
+// var arrayMatrix = [
+// 	[4, 6, 8],
+// 	[true, "stroke"],
+// 	[-100, 5.7],
+// ];
+
+// arrayMatrix[1][0] = "true changed to this";
+// console.log(arrayMatrix); to check changes
+
+//  Lesson 8 Cycles
+
+// for (var i = 0; i < 10; i++) {    cycle until 9
+// 	console.log(i);
+// }
+
+// for (var i = 1; i <= 10; i++) {
+// 	console.log(i);
+// }
+
+// for (var i = 100; i > 5; i /= 2) {
+// 	console.log(i);
+// }
+
+// var j = 0;
+// while (j < 10) {
+// 	console.log(j);
+// 	j++;             console    1 2 3 4 5 6 7 8 9
+// }
+
+// var j = 1000;
+// while (j > 100) {
+// 	console.log(j);
+// 	j -= 100;
+// }
+
+// var isHasCar = true;   dont start this cycle because its infinite
+// while (isHasCar) {     because isHasCar is always true
+
+// }
+
+// var x = 100;
+// do {
+// 	console.log(x);   заведомо некорректно потому-что х=100
+// } while (x < 50);  а мы просим выполнять цикл пока х не станет менье 50 но "do" выполнит цикл один раз
+// {
+// }
+
+// var x = 0;
+// do {
+// 	console.log(x);
+// 	x++;
+// } while (x < 10);                        123456789
+
+// for (var i = 10; i <= 20; i += 2) {      10 12 14 break cycle
+// 	if (i > 15) break;                      when i > 15
+
+// 	console.log(i);
+// }
+
+// for (var i = 10; i <= 20; i++) {
+// 	if (i % 2 == 0) continue;             i % 2 == 0 (условие если i при делении на 2 является четной ) спрацьовує (12 14 16 18 20)але
+// 	console.log(i);                       оператор continue продовжує цикл і ми маємо нечет (11 13 15 17 19)
+// }
+
+// var array = [5, 7, 3, 8, 9, "check"];
+
+// for (var i = 0; i < array.length; i++) {
+// 	console.log("Element " + i + ": " + array[i]);   array count until array.lenght (0-5) because index from 0
+// }
+
+// var array = [5, 7, 3, 8, 9, "check"];
+
+// for (var i = 0; i < array.length; i++) {
+// 	console.log("Element " + (i + 1) + ": " + array[i]);  (i + 1) для красоти індексаціі с единиці
+// }
+
+// var array = [5, 7, 3, 8, 9, 22];
+
+// for (var i = 0; i < array.length; i++) {
+// 	array[i] *= 2;                                       you may do what you want with you array(masive) in ex multiply every part of array(masive)*2
+// 	console.log("Element " + i + ": " + array[i]);
+// }
+
+//  Lesson 9   Alert Prompt Confirm
+
+// alert("Hello JavaScript");
+
+// confirm("Are you Ready for a party?");
+
+// var data = confirm("Are you Ready for a party?");  true or false in console
+// console.log(data);
+
+var data = confirm("Are you Ready for a party?");
+if (data) {
+	alert("Very Good");
+}
