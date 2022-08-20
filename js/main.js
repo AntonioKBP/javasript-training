@@ -233,7 +233,54 @@
 // var data = confirm("Are you Ready for a party?");  true or false in console
 // console.log(data);
 
-var data = confirm("Are you Ready for a party?");
-if (data) {
-	alert("Very Good");
+// var data = confirm("Are you Ready for a party?");
+// if (data) {
+// 	alert("Very Good");
+// }
+// Prompt
+// prompt("How old are you", 21);
+
+// var data = prompt("How old are you?");
+// console.log(data);
+
+// var person = null;
+// if (confirm("Are you sure?")) {
+// 	person = prompt("Enter your name");
+// 	alert("Hello " + person);
+// } else {
+// 	alert("You pushed cancel");
+// }
+
+//  Lesson 10
+
+// function info(word) {
+// 	console.log(word + "!");
+// }
+
+// function sum(a, b) {
+// 	var res = a + b;
+// 	console.log(res);
+// 	info(res);
+// }
+
+// sum(5, 7);
+
+// info("Hello");
+
+function summa(arr) {
+	var sum = 0;
+	for (var i = 0; i < arr.length; i++) sum += arr[i];
+
+	return sum;
 }
+
+var array = [6, 8, 1];
+// var array_2 = [6, 8, 17, 9];
+// var array_3 = [6, 8, 14, 99];
+
+summa(array);
+// summa(array_2);
+// summa(array_3);
+
+var res = summa(array);
+console.log("Result " + res);
