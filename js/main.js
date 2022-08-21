@@ -267,20 +267,100 @@
 
 // info("Hello");
 
-function summa(arr) {
-	var sum = 0;
-	for (var i = 0; i < arr.length; i++) sum += arr[i];
+// function summa(arr) {
+// 	var sum = 0;
+// 	for (var i = 0; i < arr.length; i++) sum += arr[i];
 
-	return sum;
+// 	return sum;
+// }
+
+// var array = [6, 8, 1];
+// // var array_2 = [6, 8, 17, 9];
+// // var array_3 = [6, 8, 14, 99];
+
+// summa(array);
+// // summa(array_2);
+// // summa(array_3);
+
+// var res = summa(array);
+// console.log("Result " + res);
+
+//  Local and Global
+
+// var num = 10;             global var - outside the function
+
+// function info() {
+// 	var num = 20;            local var - inside the function
+// 	console.log(num);
+// }
+
+// info();
+
+// console.log(num);
+
+//   Actions
+
+// function onClickButton() {
+// 	alert("You pushed me");
+// }
+
+// var counter = 0;
+
+// function onClickButton() {
+// 	counter++;
+// 	console.log(counter);
+// }
+
+// var counter = 0;
+
+// function onClickButton(element) {
+// 	counter++;
+// 	element.innerHTML = "You pushed button: " + counter;
+// 	console.log(element.value);
+// 	// element.style.background = "grey";
+// 	// element.style.color = "green";
+// 	element.style.cssText = "border-radius: 4px; border: none";
+// }
+
+// function onInput(element) {
+// 	if (element.value == "Hello") alert("Hello there");
+// 	console.log(element.value);
+// }
+
+//   Lesson 12
+
+// var text = document.getElementById("text");
+// console.log(text.id);
+// text.title = "New usual text";
+// console.log(text.title);
+
+// text.style.color = "red";
+// text.style.backgroundColor = "grey";
+
+// text.innerHTML = "New<br>text<br>for check";
+
+// document.getElementById("text").style.color = "white";
+
+// var spans = document.getElementsByTagName("span");
+
+// var spans = document.getElementsByClassName("simple-text");
+
+// for (var i = 0; i < spans.length; i++) {
+// 	console.log(spans[i].innerHTML);
+// }
+
+function checkForm(el) {
+	// var name = document.getElementById("name").value;
+	var name = el.name.value;
+	var pass = el.pass.value;
+	var repass = el.repass.value;
+	var state = el.state.value;
+	var error = "";
+	// console.log(name + " - " + state + " - " + pass + " - " + repass);
+	if (name == "" || pass == "" || state = "" )
+	error = "Fill the fields";
+	else if (name.length <= || name.length > 50)
+		error = "Enter correct name"
+
+	return false;
 }
-
-var array = [6, 8, 1];
-// var array_2 = [6, 8, 17, 9];
-// var array_3 = [6, 8, 14, 99];
-
-summa(array);
-// summa(array_2);
-// summa(array_3);
-
-var res = summa(array);
-console.log("Result " + res);
