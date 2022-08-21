@@ -357,10 +357,10 @@ function checkForm(el) {
 	var state = el.state.value;
 	var error = "";
 	// console.log(name + " - " + state + " - " + pass + " - " + repass);
-	if (name == "" || pass == "" || state = "" )
-	error = "Fill the fields";
-	else if (name.length <= || name.length > 50)
-		error = "Enter correct name"
 
+	if (name == "" || pass == "" || state == "") error = "Fill the fields";
+	else if (name.length <= 1 || name.length > 50) error = "Enter correct name";
+	else if (pass != repass) error = "Pass and repass should be the same";
+	else if (pass.split("&").length > 1) error = "incorrect password";
 	return false;
 }
