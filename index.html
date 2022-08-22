@@ -16,7 +16,7 @@
 		<title>Java Training</title>
 	</head>
 	<body>
-		<form id="main-form" onsubmit="return checkForm(this)" method="post">
+		<form id="main-form" method="post">
 			<label for="name">Имя:</label>
 
 			<input type="text" name="name" placeholder="Имя" id="name" />
@@ -38,6 +38,7 @@
 			<input type="radio" name="state" id="male" value="Мужской" />
 
 			<label for="male">Мужской</label>
+			<div id="error" style="color: red"></div>
 
 			<input type="radio" name="state" id="female" value="Женский" />
 
@@ -56,5 +57,6 @@
 		<!-- <button onclick="onClickButton(this)">Push the button</button>
 		<input oninput="onInput(this)" type="text" /> -->
 		<script src="./js/main.js"></script>
+		<script src="./js/lesson13.js"></script>
 	</body>
 </html>

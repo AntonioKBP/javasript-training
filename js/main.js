@@ -349,8 +349,13 @@
 // 	console.log(spans[i].innerHTML);
 // }
 
-function checkForm(el) {
+document.getElementById("main-form").addEventListener("submit", checkForm);
+
+function checkForm(event) {
 	// var name = document.getElementById("name").value;
+	event.preventDefault();
+
+	var el = document.getElementById("main-form");
 	var name = el.name.value;
 	var pass = el.pass.value;
 	var repass = el.repass.value;
@@ -362,5 +367,11 @@ function checkForm(el) {
 	else if (name.length <= 1 || name.length > 50) error = "Enter correct name";
 	else if (pass != repass) error = "Pass and repass should be the same";
 	else if (pass.split("&").length > 1) error = "incorrect password";
-	return false;
+
+	if (error != "") {
+		document.getElementById("error").innerHTML = error;
+	} else {
+		alert("All data is correct");
+		window.location = "https://ukr.net";
+	}
 }
