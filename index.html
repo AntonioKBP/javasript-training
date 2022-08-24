@@ -16,7 +16,16 @@
 		<title>Java Training</title>
 	</head>
 	<body>
-		<form id="main-form" method="post">
+
+		<label">Число
+		<input type="number" data-value>
+	</label>
+
+	<button type="button" data-add>Add</button>
+	<button type="button" data-reset>Reset</button>
+
+	<p class="js-output">Total: <span>0</span></p>
+		<!-- <form id="main-form" method="post">
 			<label for="name">Имя:</label>
 
 			<input type="text" name="name" placeholder="Имя" id="name" />
@@ -47,7 +56,10 @@
 			<br />
 
 			<input type="submit" name="submit" value="Готово" />
-		</form>
+		</form> -->
+
+
+
 		<!-- <p id="text" title="usual text">Test text</p>
 		<span class="simple-text">Text 1</span>
 		<span class="simple-text">Text 2</span>
@@ -58,5 +70,6 @@
 		<input oninput="onInput(this)" type="text" /> -->
 		<script src="./js/main.js"></script>
 		<script src="./js/lesson13.js"></script>
+		<script src="./js/autocheck.js"></script>
 	</body>
 </html>

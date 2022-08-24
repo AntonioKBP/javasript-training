@@ -23,6 +23,6 @@
 // 	if (counter == 3) clearInterval(id);
 // }
 
-setTimeout(function () {
-	console.log("Timer is working!");
-}, 2000);
+// setTimeout(function () {
+// 	console.log("Timer is working!");
+// }, 2000);

@@ -349,29 +349,29 @@
 // 	console.log(spans[i].innerHTML);
 // }
 
-document.getElementById("main-form").addEventListener("submit", checkForm);
+// document.getElementById("main-form").addEventListener("submit", checkForm);
 
-function checkForm(event) {
-	// var name = document.getElementById("name").value;
-	event.preventDefault();
+// function checkForm(event) {
+// 	// var name = document.getElementById("name").value;
+// 	event.preventDefault();
 
-	var el = document.getElementById("main-form");
-	var name = el.name.value;
-	var pass = el.pass.value;
-	var repass = el.repass.value;
-	var state = el.state.value;
-	var error = "";
-	// console.log(name + " - " + state + " - " + pass + " - " + repass);
+// 	var el = document.getElementById("main-form");
+// 	var name = el.name.value;
+// 	var pass = el.pass.value;
+// 	var repass = el.repass.value;
+// 	var state = el.state.value;
+// 	var error = "";
+// 	// console.log(name + " - " + state + " - " + pass + " - " + repass);
 
-	if (name == "" || pass == "" || state == "") error = "Fill the fields";
-	else if (name.length <= 1 || name.length > 50) error = "Enter correct name";
-	else if (pass != repass) error = "Pass and repass should be the same";
-	else if (pass.split("&").length > 1) error = "incorrect password";
+// 	if (name == "" || pass == "" || state == "") error = "Fill the fields";
+// 	else if (name.length <= 1 || name.length > 50) error = "Enter correct name";
+// 	else if (pass != repass) error = "Pass and repass should be the same";
+// 	else if (pass.split("&").length > 1) error = "incorrect password";
 
-	if (error != "") {
-		document.getElementById("error").innerHTML = error;
-	} else {
-		alert("All data is correct");
-		window.location = "https://ukr.net";
-	}
-}
+// 	if (error != "") {
+// 		document.getElementById("error").innerHTML = error;
+// 	} else {
+// 		alert("All data is correct");
+// 		window.location = "https://ukr.net";
+// 	}
+// }
