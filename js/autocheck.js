@@ -119,3 +119,22 @@
 // });
 
 // console.log(valueInput);
+
+// function getSubstring(string, length) {
+// 	const substring = string.slice(0, length); // Change this line
+
+// 	return substring;
+// }
+
+function formatMessage(message, maxLength) {
+	let result;
+	// Change code below this line
+	//
+	if (message.length <= maxLength) {
+		result = maxLength;
+	} else {
+		result = message.slice(0, maxLength) + "...";
+	}
+	/// Change code above this line
+	return result;
+}
