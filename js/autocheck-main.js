@@ -186,16 +186,16 @@
 //  первое число от start до end,
 // которое делится на 5 без остатка.
 
-const start = 6;
-const end = 27;
-let number;
+// const start = 6;
+// const end = 27;
+// let number;
 
-for (let i = start; i < end; i += 1) {
-	if (i % 5 === 0) {
-		number = i;
-		break;
-	}
-}
+// for (let i = start; i < end; i += 1) {
+// 	if (i % 5 === 0) {
+// 		number = i;
+// 		break;
+// 	}
+// }
 
 // Объявлена переменная start со значением 6
 // Объявлена переменная end со значением 27
@@ -203,3 +203,60 @@ for (let i = start; i < end; i += 1) {
 // Итоговое значение переменной number равно 10
 // В цикле for используется break для выхода
 // до завершения всех итераций цикла
+
+// =========================  32  ========================
+
+function includes(array, value) {
+	// Change code below this line
+	// const arrLength = array.length;
+	// for (let i = 0; i <= arrLength; i += 1) {
+	// 	// console.log(array[i]);
+	// 	if (array[i] === value) {
+	// 		return true;
+	// 	}
+	// }
+	// return false;
+	//  Correct(dont forget } at the end)
+
+	// for (let i = 0; i < array.length; i += 1) {
+	// 	if (array[i] === value) {
+	// 		return true;
+	// 	}
+	// 	return false;
+	// }
+
+	// const clients = ["Mango", "Ajax", "Poly"];
+
+	// for (const client of clients) {
+	// 	console.log(client);
+	// }
+
+	// const string = "javascript";
+
+	// for (const character of string) {
+	// 	console.log(character);
+	// }
+
+	for (let items of array) {
+		if (items === value) {
+			return true;
+		}
+	}
+	return false;
+	// if (array.includes(value)) {
+	// 	return true;
+	// }
+	// return false;
+	// Change code above this line
+}
+console.log(includes([1, 2, 3, 4, 5], 3));
+
+// Объявлена функция includes(array, value)
+// Вызов includes([1, 2, 3, 4, 5], 3) возвращает true
+// Вызов includes([1, 2, 3, 4, 5], 17) возвращает false
+// Вызов includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter") возвращает true
+// Вызов includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus") возвращает false
+// Вызов includes(["apple", "plum", "pear", "orange"], "plum") возвращает true
+// Вызов includes(["apple", "plum", "pear", "orange"], "kiwi") возвращает false
+// Вызов includes() для случайного массива со случайным value возвращает верный boolean
+// В функции includes используется for, return, но не метод массива includes
