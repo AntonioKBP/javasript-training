@@ -206,50 +206,50 @@
 
 // =========================  32  ========================
 
-function includes(array, value) {
-	// Change code below this line
-	// const arrLength = array.length;
-	// for (let i = 0; i <= arrLength; i += 1) {
-	// 	// console.log(array[i]);
-	// 	if (array[i] === value) {
-	// 		return true;
-	// 	}
-	// }
-	// return false;
-	//  Correct(dont forget } at the end)
+// function includes(array, value) {
+// Change code below this line
+// const arrLength = array.length;
+// for (let i = 0; i <= arrLength; i += 1) {
+// 	// console.log(array[i]);
+// 	if (array[i] === value) {
+// 		return true;
+// 	}
+// }
+// return false;
+//  Correct(dont forget } at the end)
 
-	// for (let i = 0; i < array.length; i += 1) {
-	// 	if (array[i] === value) {
-	// 		return true;
-	// 	}
-	// 	return false;
-	// }
+// for (let i = 0; i < array.length; i += 1) {
+// 	if (array[i] === value) {
+// 		return true;
+// 	}
+// 	return false;
+// }
 
-	// const clients = ["Mango", "Ajax", "Poly"];
+// const clients = ["Mango", "Ajax", "Poly"];
 
-	// for (const client of clients) {
-	// 	console.log(client);
-	// }
+// for (const client of clients) {
+// 	console.log(client);
+// }
 
-	// const string = "javascript";
+// const string = "javascript";
 
-	// for (const character of string) {
-	// 	console.log(character);
-	// }
+// for (const character of string) {
+// 	console.log(character);
+// }
 
-	for (let items of array) {
-		if (items === value) {
-			return true;
-		}
-	}
-	return false;
-	// if (array.includes(value)) {
-	// 	return true;
-	// }
-	// return false;
-	// Change code above this line
-}
-console.log(includes([1, 2, 3, 4, 5], 3));
+// for (let items of array) {
+// 	if (items === value) {
+// 		return true;
+// 	}
+// }
+// return false;
+// if (array.includes(value)) {
+// 	return true;
+// }
+// return false;
+// Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
 
 // Объявлена функция includes(array, value)
 // Вызов includes([1, 2, 3, 4, 5], 3) возвращает true
@@ -260,3 +260,85 @@ console.log(includes([1, 2, 3, 4, 5], 3));
 // Вызов includes(["apple", "plum", "pear", "orange"], "kiwi") возвращает false
 // Вызов includes() для случайного массива со случайным value возвращает верный boolean
 // В функции includes используется for, return, но не метод массива includes
+
+//  ========================== block 3  ========================
+
+// =========================== 12 =================================
+
+// Напиши функцию countProps(object),
+// которая считает и возвращает количество
+// собственных свойств объекта в параметре object.
+// Используй переменную propCount
+//  для хранения количества свойств объекта.
+
+// function countProps(object) {
+// 	let propCount = 0;
+// 	// Change code below this line
+// 	const entries = Object.entries(object);
+// 	console.log(entries);
+// 	let entriesLength = Object.entries(object).length;
+// 	console.log(entriesLength);
+// 	propCount = entriesLength;
+// 	// Change code above this line
+// 	return propCount;
+// }
+
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// Вызов countProps({ name: "Mango", age: 2 }) возвращает 2
+// Вызов countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }) возвращает 3
+// Функция подсчитывает только собственные свойства объекта
+
+//  ========================== 13 ================================
+
+// Перебери объект apartment используя метод Object.keys() и цикл for...of.
+//  Запиши в переменную keys массив ключей собственных свойств объекта apartment,
+// 	и добавь в массив values все значения его свойств.
+
+// const apartment = {
+// 	descr: "Spacious apartment in the city center",
+// 	rating: 4,
+// 	price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// // console.table(keys);
+// for (const key of keys) {
+// 	console.table(apartment[key]);
+// 	values.push(apartment[key]);
+// }
+
+// console.log(values);
+
+//     Объявлена переменная apartment.
+//     Значение переменной apartment это объект.
+//     Объявлена переменная keys.
+//     Значение переменной keys это массив ["descr", "rating", "price"].
+//     Значение переменной keys получено с помощью метода Object.keys().
+//     Объявлена переменная values.
+//     Значение переменной values это массив ["Spacious apartment in the city center", 4, 2153].
+//         Значение переменной values получено с помощью цикла for...of.
+
+// const keys = Object.keys(apartment);
+// const valuesOfAppartment = Object.values(apartment);
+// console.log(valuesOfAppartment);
+// for (const value of valuesOfAppartment) {
+// 	console.log(value);
+// 	console.log(values);
+// 	values.push(value);
+// }
+
+// ========================== 14 =====================
+
+function countProps(object) {
+	// Change code below this line
+	let propCount = 0;
+	const keys = Object.keys(object);
+
+	// console.log(keys);
+
+	return Object.keys(object).length;
+	// Change code above this line
+}
+
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500, hello: true }));
