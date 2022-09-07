@@ -330,15 +330,254 @@
 
 // ========================== 14 =====================
 
-function countProps(object) {
-	// Change code below this line
-	let propCount = 0;
-	const keys = Object.keys(object);
+// function countProps(object) {
+// 	// Change code below this line
+// 	let propCount = 0;
+// 	const keys = Object.keys(object);
 
-	// console.log(keys);
+// 	// console.log(keys);
 
-	return Object.keys(object).length;
-	// Change code above this line
-}
+// 	return Object.keys(object).length;
+// 	// Change code above this line
+// }
 
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500, hello: true }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500, hello: true }));
+
+// ================ 16 ======================================
+// Напиши функцию countTotalSalary(salaries)
+// которая принимает объект зарплат, где имя свойства это имя сотрудника,
+// 	а значение свойства это зарплата.
+// 	Функция должна рассчитать общую сумму зарплат сотрудников и
+// 	вернуть её.
+//  Используй переменную totalSalary для хранения общей суммы зарплаты.
+
+// function countTotalSalary(salaries) {
+// 	let totalSalary = 0;
+// 	// Change code below this line
+// 	const keys = Object.keys(salaries);
+// 	for (let key of keys) {
+// 		console.log(salaries[key]);
+// 		totalSalary += salaries[key];
+// 	}
+// 	// Change code above this line
+// 	return totalSalary;
+// }
+
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+// Объявлена функция countTotalSalary(salaries)
+// Вызов countTotalSalary({}) возвращает 0
+// Вызов countTotalSalary({ mango: 100, poly: 150, alfred: 80 }) возвращает 330
+// Вызов countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }) возвращает 400
+// Функция учитывает только собственные свойства объекта
+
+// ============== 17 ====================
+
+// Перебери массив объектов colors используя цикл for...of.
+//  Добавь в массив hexColors значения свойств hex,
+// 	а в массив rgbColors значения свойств rgb из всех
+// 	 объектов массива colors.
+
+// const colors = [
+// 	{ hex: "#f44336", rgb: "244,67,54" },
+// 	{ hex: "#2196f3", rgb: "33,150,243" },
+// 	{ hex: "#4caf50", rgb: "76,175,80" },
+// 	{ hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (const color of colors) {
+// 	hexColors.push(color.hex);
+// 	rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+//     Объявлена переменная colors
+//     Значение переменной colors это массив
+//     Объявлена переменная hexColors
+//     Значение переменной hexColors это массив ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
+//     Объявлена переменная rgbColors
+//     Значение переменной rgbColors это массив ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
+
+// ================ 18 =============
+
+// Напиши функцию getProductPrice(productName)
+//  которая принимает один параметр productName - название продукта
+// 	.Функция ищет объект продукта с таким именем(свойство name)
+// 	 в массиве products и возвращает его цену(свойство price).
+// 	 Если продукт с таким названием не найден,
+// 	функция должна возвращать null.
+
+// const products = [
+// 	{ name: "Radar", price: 1300, quantity: 4 },
+// 	{ name: "Scanner", price: 2700, quantity: 3 },
+// 	{ name: "Droid", price: 400, quantity: 7 },
+// 	{ name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+// 	// Change code below this line
+// 	for (const product of products) {
+// 		console.log(product);
+// 		if (product.name === productName) {
+// 			return product.price;
+// 		}
+// 	}
+// 	return null;
+// 	// Change code above this line
+// }
+
+// console.log(getProductPrice("Scanner"));
+
+//     Объявлена функция getProductPrice(productName).
+//     Вызов getProductPrice("Radar") возвращает 1300.
+//     Вызов getProductPrice("Grip") возвращает 1200.
+//     Вызов getProductPrice("Scanner") возвращает 2700.
+//     Вызов getProductPrice("Droid") возвращает 400.
+//     Вызов getProductPrice("Engine") возвращает null.
+
+// ================== 19 ===================
+
+// Напиши функцию getAllPropValues(propName)
+//  которая принимает один параметр propName - имя(ключ) свойства.
+//  Функция должна вернуть массив всех значений свойства с таким
+//   именем из каждого объекта в массиве products.Если в объектах
+//   нет свойства с таким именем, функция должна вернуть пустой массив.
+
+// const products = [
+// 	{ name: "Radar", price: 1300, quantity: 4 },
+// 	{ name: "Scanner", price: 2700, quantity: 3 },
+// 	{ name: "Droid", price: 400, quantity: 7 },
+// 	{ name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+// 	// Change code below this line
+// 	const props = [];
+// 	for (const product of products)
+// 		if (product[propName]) {
+// 			props.push(product[propName]);
+// 		}
+// 	return props;
+// 	// Change code above this line
+// }
+
+// console.log(getAllPropValues("name"));
+// console.log(getAllPropValues("quantity"));
+// console.log(getAllPropValues("price"));
+// console.log(getAllPropValues("category"));
+
+//     Объявлена функция getAllPropValues(propName)
+//     Вызов getAllPropValues("name") возвращает ["Radar", "Scanner", "Droid", "Grip"]
+//     Вызов getAllPropValues("quantity") возвращает [4, 3, 7, 9]
+//     Вызов getAllPropValues("price") возвращает [1300, 2700, 400, 1200]
+//     Вызов getAllPropValues("category") возвращает []
+
+// ================= 20 =======================
+
+// Напиши функцию calculateTotalPrice(productName)
+//  которая принимает один параметр productName - название товара.
+//  Функция должна вернуть общую стоимость(цена * количество)
+//  товара с таким именем из массива products.
+
+// const products = [
+// 	{ name: "Radar", price: 1300, quantity: 4 },
+// 	{ name: "Scanner", price: 2700, quantity: 3 },
+// 	{ name: "Droid", price: 400, quantity: 7 },
+// 	{ name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+// 	// Пиши код ниже этой строки
+// 	let totalPrice = 0;
+// 	for (product of products)
+// 		if (product.name === productName) {
+// 			// console.log(product.price * product.quantity);
+// 			totalPrice = product.price * product.quantity;
+// 		}
+// 	return totalPrice;
+// 	// Пиши код выше этой строки
+// }
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Blaster"));
+
+//     Объявлена функция calculateTotalPrice(productName)
+//     Вызов calculateTotalPrice("Blaster") возвращает 0
+//     Вызов calculateTotalPrice("Radar") возвращает 5200
+//     Вызов calculateTotalPrice("Droid") возвращает 2800
+//     Вызов calculateTotalPrice("Grip") возвращает 10800
+//     Вызов calculateTotalPrice("Scanner") возвращает 8100
+
+// ================= 21 =======================
+
+// Пришел трёхдневный прогноз максимальных температур и мы считаем среднюю температуру
+//  за три дня(meanTemperature).Замени объявления переменных yesterday, today и tomorrow
+//  одной операцией деструктуризации свойств объекта highTemperatures.
+
+const highTemperatures = {
+	yesterday: 28,
+	today: 26,
+	tomorrow: 33,
+};
+// Change code below this line
+
+const yesterday = highTemperatures.yesterday;
+const today = highTemperatures.today;
+const tomorrow = highTemperatures.tomorrow;
+
+// Change code above this line
+const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+//     Объявлена переменная highTemperatures
+//     Значение переменной highTemperatures это объект
+//     Объявлена переменная yesterday с помощью деструктуризации
+//     Значение переменной yesterday это число 28
+//     Объявлена переменная today с помощью деструктуризации
+//     Значение переменной today это число 26
+//     Объявлена переменная tomorrow с помощью деструктуризации
+//     Значение переменной tomorrow это число 33
+//     Объявлена переменная meanTemperature
+//     Значение переменной meanTemperature это число 29
+//     Используется синтаксис деструктуризации объекта highTemperatures
+
+// ================= 22 =======================
+
+// ================= 23 =======================
+
+// ================= 24 =======================
+
+// ================= 25 =======================
+
+// ================= 26 =======================
+
+// ================= 27 =======================
+
+// ================= 28 =======================
+
+// ================= 29 =======================
+
+// ================= 30 =======================
+
+// ================= 31 =======================
+
+// ================= 32 =======================
+
+// ================= 33 =======================
+
+// ================= 34 =======================
+
+// ================= 35 =======================
+
+// ================= 36 =======================
+
+// ================= 37 =======================
+
+// ================= 39 =======================
+
+// ================= 40 =======================
+
+// ================= 41 =======================
