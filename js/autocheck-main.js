@@ -518,19 +518,20 @@
 //  за три дня(meanTemperature).Замени объявления переменных yesterday, today и tomorrow
 //  одной операцией деструктуризации свойств объекта highTemperatures.
 
-const highTemperatures = {
-	yesterday: 28,
-	today: 26,
-	tomorrow: 33,
-};
-// Change code below this line
+// const highTemperatures = {
+// 	yesterday: 28,
+// 	today: 26,
+// 	tomorrow: 33,
+// };
+// // Change code below this line
+// const { yesterday, today, tomorrow } = highTemperatures;
 
-const yesterday = highTemperatures.yesterday;
-const today = highTemperatures.today;
-const tomorrow = highTemperatures.tomorrow;
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
 
-// Change code above this line
-const meanTemperature = (yesterday + today + tomorrow) / 3;
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
 
 //     Объявлена переменная highTemperatures
 //     Значение переменной highTemperatures это объект
@@ -545,16 +546,150 @@ const meanTemperature = (yesterday + today + tomorrow) / 3;
 //     Используется синтаксис деструктуризации объекта highTemperatures
 
 // ================= 22 =======================
+// const highTemperatures = {
+// 	yesterday: 28,
+// 	today: 26,
+// 	tomorrow: 33,
+// };
+// // Change code below this line
+// const {
+// 	yesterday,
+// 	today,
+// 	tomorrow,
+// 	icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+// // const icon = highTemperatures.icon;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+// console.log(meanTemperature);
 
 // ================= 23 =======================
+// const highTemperatures = {
+// 	yesterday: 28,
+// 	today: 26,
+// 	tomorrow: 33,
+// };
+// // Change code below this line
+
+// const {
+// 	yesterday: highYesterday,
+// 	today: highToday,
+// 	tomorrow: highTomorrow,
+// 	icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+
+// // const highYesterday = highTemperatures.yesterday;
+// // const highToday = highTemperatures.today;
+// // const highTomorrow = highTemperatures.tomorrow;
+// // const highIcon = highTemperatures.icon;
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
 
 // ================= 24 =======================
+// const colors = [
+// 	{ hex: "#f44336", rgb: "244,67,54" },
+// 	{ hex: "#2196f3", rgb: "33,150,243" },
+// 	{ hex: "#4caf50", rgb: "76,175,80" },
+// 	{ hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (const { hex, rgb } of colors) {
+// 	hexColors.push(hex);
+// 	rgbColors.push(rgb);
+// }
+
+// console.log(hexColors);
 
 // ================= 25 =======================
+// const forecast = {
+// 	today: {
+// 		low: 28,
+// 		high: 32,
+// 		icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+// 	},
+// 	tomorrow: {
+// 		low: 27,
+// 		high: 31,
+// 	},
+// };
+// Change code below this line
+
+// const {
+// 	today: {
+// 		low: lowToday,
+// 		high: highToday,
+// 		icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+// 	},
+// 	tomorrow: {
+// 		low: lowTomorrow,
+// 		high: highTomorrow,
+// 		icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// 	},
+// } = forecast;
+
+// console.log(highTomorrow);
+
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
+
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
 
 // ================= 26 =======================
 
+// Замени объявления переменных todayLow, todayHigh,
+// 	tomorrowLow и tomorrowHigh одной операцией деструктуризации
+// 	 свойств объекта forecast.
+
+// Change code below this line
+// const forecast = {
+// 	today: { low: 10, high: 20 },
+// 	tomorrow: { low: 20, high: 30 },
+// };
+
+// function calculateMeanTemperature(forecast) {
+// 	//   const todayLow = forecast.today.low;
+// 	//   const todayHigh = forecast.today.high;
+// 	//   const tomorrowLow = forecast.tomorrow.low;
+// 	//   const tomorrowHigh = forecast.tomorrow.high;
+
+// 	const {
+// 		today: { low: todayLow, high: todayHigh },
+// 		tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+// 	} = forecast;
+// 	// Change code above this line
+// 	return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// console.log(calculateMeanTemperature({ today: { low: 28, high: 32 }, tomorrow: { low: 25, high: 29 } }));
+//     Объявлена функция calculateMeanTemperature(forecast)
+//     В теле функции используется деструктуризация объекта
+//     В теле функции объявлена переменная todayHigh с помощью деструктуризации
+//     В теле функции объявлена переменная todayLow с помощью деструктуризации
+//     В теле функции объявлена переменная tomorrowLow с помощью деструктуризации
+//     В теле функции объявлена переменная tomorrowHigh с помощью деструктуризации
+//     Вызов calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }) возвращает 28.5
+//     Вызов calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }) возвращает 37
+
 // ================= 27 =======================
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// console.log(bestScore);
+// console.log(worstScore);
 
 // ================= 28 =======================
 
@@ -562,9 +697,76 @@ const meanTemperature = (yesterday + today + tomorrow) / 3;
 
 // ================= 30 =======================
 
+// Напиши функцию makeTask(data) которая принимает один параметр data
+// 	- объект со следующими свойствами.
+
+//     text - текст задачи.
+//     category - категория задачи.
+//     priority - приоритет задачи.
+
+// Функция должна составить и вернуть новый объект задачи,
+// 	не изменяя напрямую параметр data.
+// 	В новом объекте должно быть свойство completed,
+// 	значение которого хранится в одноимённой локальной переменной.
+
+// В параметре data гарантированно будет только свойство text,
+// 	а остальные два, category и priority, могут отсутствовать.
+// 	Тогда, в новом объекте задачи,
+// 	в свойствах category и priority должны быть значения по
+// умолчанию, хранящиеся в одноимённых локальных переменных.
+
+// function makeTask(data) {
+// 	const completed = false;
+// 	const category = "General";
+// 	const priority = "Normal";
+// 	// Change code below this line
+// 	const myArray = { category, priority, ...data, completed };
+
+// 	return myArray;
+// 	// Change code above this line
+// }
+
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+//     Объявлена функция makeTask(data)
+//     Вызов makeTask({}) возвращает { category: "General", priority: "Normal", completed: false }
+//     Вызов makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }) возвращает { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+//     Вызов makeTask({ category: "Finance", text: "Take interest" }) возвращает { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+//     Вызов makeTask({ priority: "Low", text: "Choose shampoo" }) возвращает { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+//     Вызов makeTask({ text: "Buy bread" }) возвращает { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+
 // ================= 31 =======================
 
+// Change code below this line
+// function add(...args) {
+// 	let total = 0;
+// 	for (let arg of args) {
+// 		total += arg;
+// 	}
+// 	return total;
+// 	// Change code above this line
+// }
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
 // ================= 32 =======================
+
+function addOverNum(firstNumber, ...args) {
+	let total = 0;
+
+	for (const arg of args) {
+		// console.log(args);
+		if (firstNumber > arg) {
+			total += arg;
+		}
+	}
+
+	//   total += arg;
+	// }
+
+	return total;
+	// Change code above this line
+}
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
 
 // ================= 33 =======================
 
