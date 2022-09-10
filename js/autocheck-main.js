@@ -750,31 +750,122 @@
 // console.log(add(32, 6, 13, 19, 8));
 // ================= 32 =======================
 
-function addOverNum(firstNumber, ...args) {
-	let total = 0;
+// function addOverNum(firstNumber, ...args) {
+// 	let total = 0;
 
-	for (const arg of args) {
-		// console.log(args);
-		if (firstNumber > arg) {
-			total += arg;
-		}
-	}
+// 	for (const arg of args) {
+// 		// console.log(args);
+// 		if (firstNumber < arg) {
+// 			total += arg;
+// 		}
+// 	}
 
-	//   total += arg;
-	// }
+// 	//   total += arg;
+// 	// }
 
-	return total;
-	// Change code above this line
-}
-console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// 	return total;
+// 	// Change code above this line
+// }
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+// console.log(addOverNum(50, 15, 27));
 
 // ================= 33 =======================
+
+// Функция findMatches() принимает произвольное количество аргументов.
+// Первым аргументом всегда будет массив чисел, а остальные аргументы
+// будут просто числами.
+
+// Дополни код функции так, чтобы она возвращала новый массив matches,
+// 	в котором будут только те аргументы, начиная со второго,
+// 		которые есть в массиве первого аргумента.
+
+// function findMatches(array, ...args) {
+// 	const matches = [];
+// 	// const max = Math.max(...array);
+
+// 	// Don't change this line
+// 	console.log(array);
+// 	for (const arg of args) {
+// 		// console.log(arg);
+// 		if (array.includes(arg)) {
+// 			matches.push(arg);
+// 		}
+// 	}
+// 	// Change code above this line
+// 	return matches;
+// }
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+
+// 	Например, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7)
+// 	 должна вернуть массив[1, 2],
+// 		потому что только они есть в массиве первого аргумента.
 
 // ================= 34 =======================
 
 // ================= 35 =======================
+// Дополни метод updateBook(oldName, newName) так,
+// чтобы он изменял название книги с oldName на newName в свойстве
+// books.Используй indexOf() для того, чтобы найти нужный элемент массива,
+// и splice() для того чтобы заменить этот элемент
+
+// const bookShelf = {
+// 	books: ["The last kingdom", "Haze", "The guardian of dreams"],
+// 	updateBook(oldName, newName) {
+// 		// Change code below this line
+// 		const bookIndex = this.books.indexOf(oldName);
+// 		console.log(bookIndex);
+// 		if (this.books.includes(oldName)) {
+// 			this.books.splice(bookIndex, 1, newName);
+// 		}
+// 		// Change code above this line
+// 	},
+// };
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.books);
+// Объявлена переменная bookShelf
+
+// Значение переменной bookShelf это объект
+
+// Значение свойства bookShelf.updateBook это метод объекта
+
+// После вызова метода bookShelf.updateBook("Haze", "Dungeon chronicles"), значение свойства books это массив ["The last kingdom", "Dungeon chronicles", "The guardian of dreams"]
+
+// После вызова метода bookShelf.updateBook("The last kingdom", "Dune"), значение свойства books это массив ["Dune", "Haze", "The guardian of dreams"]
 
 // ================= 36 =======================
+
+// К нам обратилась владелица лавки зелий «У старой жабы» и заказала программу для ведения инвентаря
+// 	- добавления, удаления, поиска и обновления зелий.
+// 	Добавь объекту atTheOldToad свойство potions, значением которого сделай пустой массив.
+const atTheOldToad = {
+	// Change code below this line
+	potions: [],
+	addPotions(newPotion) {
+		console.log(newPotion);
+		this.potions.push(newPotion);
+	},
+	removePotions(potionToRemove) {
+		const potionIndex = this.potions.indexOf(potionToRemove);
+		console.log(potionIndex);
+		if (this.potions.includes(potionToRemove)) {
+			this.potions.splice(potionIndex, 1);
+		}
+	},
+	searchPotion(potionToSearch) {},
+	// Change code above this line
+};
+console.log(atTheOldToad.addPotions("Good potion"));
+console.log(atTheOldToad.addPotions("Another potion"));
+console.log(atTheOldToad.addPotions("Third potion"));
+console.log(atTheOldToad.removePotions("Another potion"));
+console.log(atTheOldToad.potions);
+
+//     Объявлена переменная atTheOldToad
+//     Значение переменной atTheOldToad это объект
+//     Значение свойства atTheOldToad.potions это массив []
 
 // ================= 37 =======================
 
