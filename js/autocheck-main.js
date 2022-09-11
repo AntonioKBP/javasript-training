@@ -910,7 +910,7 @@ const atTheOldToad = {
 		return `Potion ${oldName} is not in inventory!`;
 	},
 };
-console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
 
 // console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
 // console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
@@ -920,6 +920,6 @@ console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
 // console.log(atTheOldToad.removePotion("Dragon breath"));
 
 // console.log(atTheOldToad.updatePotionName("Ouch skipper", "Invulnerability potion"));
-// console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
+console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
 
-console.table(atTheOldToad.potions);
+console.log(atTheOldToad.potions);
