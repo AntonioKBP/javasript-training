@@ -902,6 +902,15 @@ const atTheOldToad = {
 		return `Potion ${potionName} is not in inventory!`;
 	},
 	updatePotionName(oldName, newName) {
+		// for (const potion of this.potions) {
+		// 	const index = this.potions.indexOf(potion);
+		// 	// console.log(index);
+		// 	if (oldName === potion.name) {
+		// 		return this.potions.splice(index, 1, newName);
+		// 	}
+		// }
+		// return `Potion ${oldName} is not in inventory!`;
+
 		for (const potion of this.potions) {
 			if (potion.name === oldName) {
 				potion.name = newName;
@@ -919,7 +928,7 @@ const atTheOldToad = {
 // console.log(atTheOldToad.removePotion("To check potion"));
 // console.log(atTheOldToad.removePotion("Dragon breath"));
 
-// console.log(atTheOldToad.updatePotionName("Ouch skipper", "Invulnerability potion"));
+console.log(atTheOldToad.updatePotionName("Ouch skipper", "Invulnerability potion"));
 console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
 
 console.log(atTheOldToad.potions);
