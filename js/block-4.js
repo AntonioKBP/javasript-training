@@ -356,40 +356,80 @@
 
 // ========================= 20 =============================
 
-const books = [
-	{
-		title: "The Last Kingdom",
-		author: "Bernard Cornwell",
-		genres: ["adventure", "history"],
-	},
-	{
-		title: "Beside Still Waters",
-		author: "Robert Sheckley",
-		genres: ["fiction", "mysticism"],
-	},
-	{
-		title: "Redder Than Blood",
-		author: "Tanith Lee",
-		genres: ["horror", "mysticism", "adventure"],
-	},
+// const books = [
+// 	{
+// 		title: "The Last Kingdom",
+// 		author: "Bernard Cornwell",
+// 		genres: ["adventure", "history"],
+// 	},
+// 	{
+// 		title: "Beside Still Waters",
+// 		author: "Robert Sheckley",
+// 		genres: ["fiction", "mysticism"],
+// 	},
+// 	{
+// 		title: "Redder Than Blood",
+// 		author: "Tanith Lee",
+// 		genres: ["horror", "mysticism", "adventure"],
+// 	},
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(book => book.genres);
+// const uniqueGenres = allGenres.filter((genre, index, array) => array.indexOf(genre) === index);
+// console.log(allGenres);
+// console.log(uniqueGenres);
+// ========================= # ==============================
+
+// ========================= # ==============================
+
+// ========================= # ==============================
+
+// ========================= # ==============================
+
+// ========================= # ==============================
+
+// ========================= # ==============================
+
+// ========================= # ==============================
+
+// ========================= # ==============================
+const a = [1, 8, 2, 3, 42, 7, 4];
+// max = a[0];
+// for (let i = 0; i < a.length; i += 1) {
+// 	if (a[i] > max) {
+// 		max = a[i];
+// 		index = i;
+// 	}
+// }
+// console.log(index);
+// let d = a.reduce(
+// 	(prev, item, index) => {
+// 		if (item > prev[1]) {
+// 			return [index, item];
+// 		} else {
+// 			return prev;
+// 		}
+// 	},
+// 	[0, a[0]],
+// );
+// console.log(d);
+// const data = [
+// 	[1, 2, 3],
+// 	[3, 4, 5],
+// 	[5, 6, 7],
+// ];
+// const flat = data.reduce((prev, item) => {
+// 	return prev.concat(item);
+// });
+// console.log(flat);
+
+const data = [
+	[1, 2, 3],
+	[3, 4, 5],
+	[5, 6, 7],
 ];
-// Change code below this line
-const allGenres = books.flatMap(book => book.genres);
-const uniqueGenres = allGenres.filter((genre, index, array) => array.indexOf(genre) === index);
-console.log(allGenres);
-console.log(uniqueGenres);
-// ========================= # ==============================
-
-// ========================= # ==============================
-
-// ========================= # ==============================
-
-// ========================= # ==============================
-
-// ========================= # ==============================
-
-// ========================= # ==============================
-
-// ========================= # ==============================
-
-// ========================= # ==============================
+const flat = data.reduce((prev, item) => {
+	newArray = [];
+	newArray.push(...item);
+});
+console.log(newArray);
