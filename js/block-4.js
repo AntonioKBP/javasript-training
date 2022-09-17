@@ -541,6 +541,94 @@
 // Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
 
 // ========================= 25 =============================
+// const users = [
+// 	{
+// 		name: "Moore Hensley",
+// 		email: "moorehensley@indexia.com",
+// 		eyeColor: "blue",
+// 		friends: ["Sharron Pace"],
+// 		isActive: false,
+// 		balance: 2811,
+// 		gender: "male",
+// 		age: 37,
+// 	},
+// 	{
+// 		name: "Sharlene Bush",
+// 		email: "sharlenebush@tubesys.com",
+// 		eyeColor: "blue",
+// 		friends: ["Briana Decker", "Sharron Pace"],
+// 		isActive: true,
+// 		balance: 3821,
+// 		gender: "female",
+// 		age: 34,
+// 	},
+// 	{
+// 		name: "Ross Vazquez",
+// 		email: "rossvazquez@xinware.com",
+// 		eyeColor: "green",
+// 		friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+// 		isActive: false,
+// 		balance: 3793,
+// 		gender: "male",
+// 		age: 24,
+// 	},
+// 	{
+// 		name: "Elma Head",
+// 		email: "elmahead@omatom.com",
+// 		eyeColor: "green",
+// 		friends: ["Goldie Gentry", "Aisha Tran"],
+// 		isActive: true,
+// 		balance: 2278,
+// 		gender: "female",
+// 		age: 21,
+// 	},
+// 	{
+// 		name: "Carey Barr",
+// 		email: "careybarr@nurali.com",
+// 		eyeColor: "blue",
+// 		friends: ["Jordan Sampson", "Eddie Strong"],
+// 		isActive: true,
+// 		balance: 3951,
+// 		gender: "male",
+// 		age: 27,
+// 	},
+// 	{
+// 		name: "Blackburn Dotson",
+// 		email: "blackburndotson@furnigeer.com",
+// 		eyeColor: "brown",
+// 		friends: ["Jacklyn Lucas", "Linda Chapman"],
+// 		isActive: false,
+// 		balance: 1498,
+// 		gender: "male",
+// 		age: 38,
+// 	},
+// 	{
+// 		name: "Sheree Anthony",
+// 		email: "shereeanthony@kog.com",
+// 		eyeColor: "brown",
+// 		friends: ["Goldie Gentry", "Briana Decker"],
+// 		isActive: true,
+// 		balance: 2764,
+// 		gender: "female",
+// 		age: 39,
+// 	},
+// ];
+// console.log(users);
+// Дополни функцию getFriends(users) так, чтобы она возвращала массив друзей всех
+// пользователей(свойство friends).У нескольких пользователей могут быть одинаковые друзья,
+// сделай так чтобы возвращаемый массив не содержал повторений.
+// const getFriends = users => {
+// 	return (allUserFriends = users
+// 		.flatMap(user => user.friends)
+// 		.filter((friend, idx, arr) => arr.indexOf(friend) === idx));
+// };
+// console.log(getFriends(users));
+// Вызов функции с указанным массивом пользователей возвращает массив["Sharron Pace", "Briana Decker",
+// 	"Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner", "Goldie Gentry", "Aisha Tran", "Jordan Sampson",
+// 	"Eddie Strong", "Jacklyn Lucas", "Linda Chapman"]
+
+// ========================= 26 ==============================
+
 const users = [
 	{
 		name: "Moore Hensley",
@@ -613,24 +701,56 @@ const users = [
 		age: 39,
 	},
 ];
-// console.log(users);
-// Дополни функцию getFriends(users) так, чтобы она возвращала массив друзей всех
-// пользователей(свойство friends).У нескольких пользователей могут быть одинаковые друзья,
-// сделай так чтобы возвращаемый массив не содержал повторений.
-const getFriends = users => {
-	const allUserFriends = users.flatMap(user => user.friends);
-	return allUserFriends.filter((friend, idx, arr) => arr.indexOf(friend) === idx);
-};
-console.log(getFriends(users));
-// Вызов функции с указанным массивом пользователей возвращает массив["Sharron Pace", "Briana Decker",
-// 	"Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner", "Goldie Gentry", "Aisha Tran", "Jordan Sampson",
-// 	"Eddie Strong", "Jacklyn Lucas", "Linda Chapman"]
+// Дополни функцию getActiveUsers(users) так, чтобы она возвращала массив активных пользователей,
+// значение свойства isActive которых true.
+// Change code below this line
+// const getActiveUsers = users => users.filter(user => !user.isActive);
+// // Change code above this line
+// console.log(getActiveUsers(users));
+// Объявлена переменная getActiveUsers Переменной getActiveUsers присвоена стрелочная функция с параметром users
+// Для перебора параметра users используется метод filter()
+// Вызов функции с указанным массивом пользователей возвращает массив объектов пользователей с
+// именами Sharlene Bush, Elma Head, Carey Barr и Sheree Anthony
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
 
-// ========================= # ==============================
+// ========================= 29 ==============================
 
-// ========================= # ==============================
+// Change code below this line
 
-// ========================= # ==============================
+// Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя,
+// почта которого(свойство email) совпадает со значением параметра email.
+
+// const getUserWithEmail = (users, email) => users.find(book => book.email === email);
+
+// // Change code above this line
+
+// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+// console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
+
+// ========================= 30 ==============================
+
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change code below this line
+
+const eachElementInFirstIsEven = firstArray;
+const eachElementInFirstIsOdd = firstArray;
+
+const eachElementInSecondIsEven = secondArray;
+const eachElementInSecondIsOdd = secondArray;
+
+const eachElementInThirdIsEven = thirdArray;
+const eachElementInThirdIsOdd = thirdArray;
+
+// Используя метод every() дополни код так, чтобы:
+
+// В переменной eachElementInFirstIsEven был результат проверки всех элементов массива firstArray на чётность.
+// В переменной eachElementInFirstIsOdd был результат проверки всех элементов массива firstArray на нечётность.
+// В переменной eachElementInSecondIsEven был результат проверки всех элементов массива secondArray на чётность.
+// В переменной eachElementInSecondIsOdd был результат проверки всех элементов массива secondArray на нечётность.
+// В переменной eachElementInThirdIsEven был результат проверки всех элементов массива thirdArray на чётность.
+// В переменной eachElementInThirdIsOdd был результат проверки всех элементов массива thirdArray на нечётность.
 
 // ========================= # ==============================
 
