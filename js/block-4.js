@@ -887,78 +887,78 @@
 
 // ========================= 37 ==============================
 
-const users = [
-	{
-		name: "Moore Hensley",
-		email: "moorehensley@indexia.com",
-		eyeColor: "blue",
-		friends: ["Sharron Pace"],
-		isActive: false,
-		balance: 2811,
-		gender: "male",
-		age: 37,
-	},
-	{
-		name: "Sharlene Bush",
-		email: "sharlenebush@tubesys.com",
-		eyeColor: "blue",
-		friends: ["Briana Decker", "Sharron Pace"],
-		isActive: true,
-		balance: 3821,
-		gender: "female",
-		age: 34,
-	},
-	{
-		name: "Ross Vazquez",
-		email: "rossvazquez@xinware.com",
-		eyeColor: "green",
-		friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-		isActive: false,
-		balance: 3793,
-		gender: "male",
-		age: 24,
-	},
-	{
-		name: "Elma Head",
-		email: "elmahead@omatom.com",
-		eyeColor: "green",
-		friends: ["Goldie Gentry", "Aisha Tran"],
-		isActive: true,
-		balance: 2278,
-		gender: "female",
-		age: 21,
-	},
-	{
-		name: "Carey Barr",
-		email: "careybarr@nurali.com",
-		eyeColor: "blue",
-		friends: ["Jordan Sampson", "Eddie Strong"],
-		isActive: true,
-		balance: 3951,
-		gender: "male",
-		age: 27,
-	},
-	{
-		name: "Blackburn Dotson",
-		email: "blackburndotson@furnigeer.com",
-		eyeColor: "brown",
-		friends: ["Jacklyn Lucas", "Linda Chapman"],
-		isActive: false,
-		balance: 1498,
-		gender: "male",
-		age: 38,
-	},
-	{
-		name: "Sheree Anthony",
-		email: "shereeanthony@kog.com",
-		eyeColor: "brown",
-		friends: ["Goldie Gentry", "Briana Decker"],
-		isActive: true,
-		balance: 2764,
-		gender: "female",
-		age: 39,
-	},
-];
+// const users = [
+// 	{
+// 		name: "Moore Hensley",
+// 		email: "moorehensley@indexia.com",
+// 		eyeColor: "blue",
+// 		friends: ["Sharron Pace"],
+// 		isActive: false,
+// 		balance: 2811,
+// 		gender: "male",
+// 		age: 37,
+// 	},
+// 	{
+// 		name: "Sharlene Bush",
+// 		email: "sharlenebush@tubesys.com",
+// 		eyeColor: "blue",
+// 		friends: ["Briana Decker", "Sharron Pace"],
+// 		isActive: true,
+// 		balance: 3821,
+// 		gender: "female",
+// 		age: 34,
+// 	},
+// 	{
+// 		name: "Ross Vazquez",
+// 		email: "rossvazquez@xinware.com",
+// 		eyeColor: "green",
+// 		friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+// 		isActive: false,
+// 		balance: 3793,
+// 		gender: "male",
+// 		age: 24,
+// 	},
+// 	{
+// 		name: "Elma Head",
+// 		email: "elmahead@omatom.com",
+// 		eyeColor: "green",
+// 		friends: ["Goldie Gentry", "Aisha Tran"],
+// 		isActive: true,
+// 		balance: 2278,
+// 		gender: "female",
+// 		age: 21,
+// 	},
+// 	{
+// 		name: "Carey Barr",
+// 		email: "careybarr@nurali.com",
+// 		eyeColor: "blue",
+// 		friends: ["Jordan Sampson", "Eddie Strong"],
+// 		isActive: true,
+// 		balance: 3951,
+// 		gender: "male",
+// 		age: 27,
+// 	},
+// 	{
+// 		name: "Blackburn Dotson",
+// 		email: "blackburndotson@furnigeer.com",
+// 		eyeColor: "brown",
+// 		friends: ["Jacklyn Lucas", "Linda Chapman"],
+// 		isActive: false,
+// 		balance: 1498,
+// 		gender: "male",
+// 		age: 38,
+// 	},
+// 	{
+// 		name: "Sheree Anthony",
+// 		email: "shereeanthony@kog.com",
+// 		eyeColor: "brown",
+// 		friends: ["Goldie Gentry", "Briana Decker"],
+// 		isActive: true,
+// 		balance: 2764,
+// 		gender: "female",
+// 		age: 39,
+// 	},
+// ];
 
 // Дополни функцию getTotalFriendCount(users) так,
 // чтобы она считала и возвращала общее количество друзей(свойство friends) всех пользователей из массива users.
@@ -1153,33 +1153,38 @@ const users = [
 // Дополни код так, чтобы в переменной names получился массив имён авторов в алфавитном порядке,
 // 	рейтинг книг которых больше значения переменной MIN_BOOK_RATING.
 
-const books = [
-	{
-		title: "The Last Kingdom",
-		author: "Bernard Cornwell",
-		rating: 8.38,
-	},
-	{
-		title: "Beside Still Waters",
-		author: "Robert Sheckley",
-		rating: 8.51,
-	},
-	{
-		title: "The Dream of a Ridiculous Man",
-		author: "Fyodor Dostoevsky",
-		rating: 7.75,
-	},
-	{ title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-	{
-		title: "The Dreams in the Witch House",
-		author: "Howard Lovecraft",
-		rating: 8.67,
-	},
-];
-const MIN_BOOK_RATING = 8;
-// Change code below this line
+// const books = [
+// 	{
+// 		title: "The Last Kingdom",
+// 		author: "Bernard Cornwell",
+// 		rating: 8.38,
+// 	},
+// 	{
+// 		title: "Beside Still Waters",
+// 		author: "Robert Sheckley",
+// 		rating: 8.51,
+// 	},
+// 	{
+// 		title: "The Dream of a Ridiculous Man",
+// 		author: "Fyodor Dostoevsky",
+// 		rating: 7.75,
+// 	},
+// 	{ title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// 	{
+// 		title: "The Dreams in the Witch House",
+// 		author: "Howard Lovecraft",
+// 		rating: 8.67,
+// 	},
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
 
-const names = books;
+// const names = [...books]
+// 	.filter(book => book.rating > MIN_BOOK_RATING)
+// 	.map(book => book.author)
+// 	.sort((firstAuthor, secondAuthor) => firstAuthor.localeCompare(secondAuthor));
+
+// console.log(names);
 //     Объявлена переменная books
 //     Значение переменной books это исходный массив объектов
 //     Объявлена переменная MIN_BOOK_RATING
@@ -1190,8 +1195,154 @@ const names = books;
 //     Используется цепочка методов filter, map, sort
 
 // ========================= 46 ==============================
+
+const users = [
+	{
+		name: "Moore Hensley",
+		email: "moorehensley@indexia.com",
+		eyeColor: "blue",
+		friends: ["Sharron Pace"],
+		isActive: false,
+		balance: 2811,
+		gender: "male",
+		age: 37,
+	},
+	{
+		name: "Sharlene Bush",
+		email: "sharlenebush@tubesys.com",
+		eyeColor: "blue",
+		friends: ["Briana Decker", "Sharron Pace"],
+		isActive: true,
+		balance: 3821,
+		gender: "female",
+		age: 34,
+	},
+	{
+		name: "Ross Vazquez",
+		email: "rossvazquez@xinware.com",
+		eyeColor: "green",
+		friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+		isActive: false,
+		balance: 3793,
+		gender: "male",
+		age: 24,
+	},
+	{
+		name: "Elma Head",
+		email: "elmahead@omatom.com",
+		eyeColor: "green",
+		friends: ["Goldie Gentry", "Aisha Tran"],
+		isActive: true,
+		balance: 2278,
+		gender: "female",
+		age: 21,
+	},
+	{
+		name: "Carey Barr",
+		email: "careybarr@nurali.com",
+		eyeColor: "blue",
+		friends: ["Jordan Sampson", "Eddie Strong"],
+		isActive: true,
+		balance: 3951,
+		gender: "male",
+		age: 27,
+	},
+	{
+		name: "Blackburn Dotson",
+		email: "blackburndotson@furnigeer.com",
+		eyeColor: "brown",
+		friends: ["Jacklyn Lucas", "Linda Chapman"],
+		isActive: false,
+		balance: 1498,
+		gender: "male",
+		age: 38,
+	},
+	{
+		name: "Sheree Anthony",
+		email: "shereeanthony@kog.com",
+		eyeColor: "brown",
+		friends: ["Goldie Gentry", "Briana Decker"],
+		isActive: true,
+		balance: 2764,
+		gender: "female",
+		age: 39,
+	},
+];
+
+// Дополни функцию getNamesSortedByFriendCount(users) так,
+// чтобы она возвращала массив имён пользователей отсортированный по возрастанию количества их
+// друзей(свойство friends).
+
+// Объявлена переменная getNamesSortedByFriendCount
+// Переменной getNamesSortedByFriendCount присвоена стрелочная функция с параметром (users)
+// В теле функции используется цепочка методов
+// Значение параметра users не изменяется
+// Вызов функции с указанным массивом пользователей возвращает массив
+// ["Moore Hensley", "Sharlene Bush", "Elma Head", "Sheree Anthony", "Ross Vazquez", "Carey Barr", "Blackburn Dotson"]
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
+// Change code below this line
+
+// const getNamesSortedByFriendCount = users => {
+// 	return [...users]
+// 		.sort((firstBook, secondBook) => firstBook.friends.length - secondBook.friends.length)
+// 		.map(user => user.name);
+// };
+// // Change code above this line
+// console.log(getNamesSortedByFriendCount(users));
 // ========================= 47 ==============================
+
+// Дополни функцию getSortedFriends(users) так, чтобы она возвращала массив уникальных имён друзей
+// 	(свойство friends) отсортированный по алфавиту.
+
+// const getSortedFriends = users => {
+// 	return [...users]
+// 		.flatMap(user => user.friends)
+// 		.filter((friend, idx, arr) => {
+// 			return arr.indexOf(friend) === idx;
+// 		})
+// 		.sort((firstFriend, secondFriend) => firstFriend.localeCompare(secondFriend));
+// };
+
+// const getSortedFriends = users =>
+// 	[...users]
+// 		.flatMap(user => user.friends)
+// 		.filter((friend, idx, arr) => arr.indexOf(friend) === idx)
+// 		.sort((firstFriend, secondFriend) => firstFriend.localeCompare(secondFriend));
+
+// console.log(getSortedFriends(users));
+//     Объявлена переменная getSortedFriends
+//     Переменной getSortedFriends присвоена стрелочная функция с параметром (users)
+//     В теле функции используется цепочка методов в правильном порядке
+//     Значение параметра users не изменяется
+//     Вызов функции с указанным массивом пользователей возвращает массив
+// 	["Adrian Cross", "Aisha Tran", "Briana Decker", "Eddie Strong",
+// 		"Goldie Gentry", "Jacklyn Lucas", "Jordan Sampson", "Linda Chapman",
+// 		"Marilyn Mcintosh", "Naomi Buckner", "Padilla Garrison", "Sharron Pace", "Solomon Fokes"]
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
 // ========================= 48 ==============================
+
+// Дополни функцию getTotalBalanceByGender(users, gender) так,
+// 	чтобы она возвращала общий баланс пользователей(свойство balance),
+// 		пол которых(свойство gender) совпадает со значением параметра gender.
+const getTotalBalanceByGender = (users, gender) => {
+	return [...users].filter(user => user.gender === gender).reduce((total, {balance}) = {
+		return total += balance;
+	},0);
+};
+
+console.log(getTotalBalanceByGender(users, "male"));
+console.log(getTotalBalanceByGender(users, "female"));
+//     Объявлена переменная getTotalBalanceByGender
+//     Переменной getTotalBalanceByGender присвоена стрелочная функция с параметрами (users, gender)
+//     В теле функции используется цепочка методов в правильном порядке
+//     Значение параметра users не изменяется
+//     Если значение параметра gender это строка "male", функция возвращает число 12053
+//     Если значение параметра gender это строка "female", функция возвращает число 8863
+//     Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
+// ======================== Finish =================================
 // const a = [1, 8, 2, 3, 42, 7, 4];
 // max = a[0];
 // for (let i = 0; i < a.length; i += 1) {
