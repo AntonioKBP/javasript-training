@@ -629,6 +629,264 @@
 
 // ========================= 26 ==============================
 
+// const users = [
+// 	{
+// 		name: "Moore Hensley",
+// 		email: "moorehensley@indexia.com",
+// 		eyeColor: "blue",
+// 		friends: ["Sharron Pace"],
+// 		isActive: false,
+// 		balance: 2811,
+// 		gender: "male",
+// 		age: 37,
+// 	},
+// 	{
+// 		name: "Sharlene Bush",
+// 		email: "sharlenebush@tubesys.com",
+// 		eyeColor: "blue",
+// 		friends: ["Briana Decker", "Sharron Pace"],
+// 		isActive: true,
+// 		balance: 3821,
+// 		gender: "female",
+// 		age: 34,
+// 	},
+// 	{
+// 		name: "Ross Vazquez",
+// 		email: "rossvazquez@xinware.com",
+// 		eyeColor: "green",
+// 		friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+// 		isActive: false,
+// 		balance: 3793,
+// 		gender: "male",
+// 		age: 24,
+// 	},
+// 	{
+// 		name: "Elma Head",
+// 		email: "elmahead@omatom.com",
+// 		eyeColor: "green",
+// 		friends: ["Goldie Gentry", "Aisha Tran"],
+// 		isActive: true,
+// 		balance: 2278,
+// 		gender: "female",
+// 		age: 21,
+// 	},
+// 	{
+// 		name: "Carey Barr",
+// 		email: "careybarr@nurali.com",
+// 		eyeColor: "blue",
+// 		friends: ["Jordan Sampson", "Eddie Strong"],
+// 		isActive: true,
+// 		balance: 3951,
+// 		gender: "male",
+// 		age: 27,
+// 	},
+// 	{
+// 		name: "Blackburn Dotson",
+// 		email: "blackburndotson@furnigeer.com",
+// 		eyeColor: "brown",
+// 		friends: ["Jacklyn Lucas", "Linda Chapman"],
+// 		isActive: false,
+// 		balance: 1498,
+// 		gender: "male",
+// 		age: 38,
+// 	},
+// 	{
+// 		name: "Sheree Anthony",
+// 		email: "shereeanthony@kog.com",
+// 		eyeColor: "brown",
+// 		friends: ["Goldie Gentry", "Briana Decker"],
+// 		isActive: true,
+// 		balance: 2764,
+// 		gender: "female",
+// 		age: 39,
+// 	},
+// ];
+// Дополни функцию getActiveUsers(users) так, чтобы она возвращала массив активных пользователей,
+// значение свойства isActive которых true.
+// Change code below this line
+// const getActiveUsers = users => users.filter(user => !user.isActive);
+// // Change code above this line
+// console.log(getActiveUsers(users));
+// Объявлена переменная getActiveUsers Переменной getActiveUsers присвоена стрелочная функция с параметром users
+// Для перебора параметра users используется метод filter()
+// Вызов функции с указанным массивом пользователей возвращает массив объектов пользователей с
+// именами Sharlene Bush, Elma Head, Carey Barr и Sheree Anthony
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
+// ========================= 29 ==============================
+
+// Change code below this line
+
+// Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя,
+// почта которого(свойство email) совпадает со значением параметра email.
+
+// const getUserWithEmail = (users, email) => users.find(book => book.email === email);
+
+// // Change code above this line
+
+// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+// console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
+
+// ========================= 30 ==============================
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every(number => number % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(number => number % 2 === 1);
+
+// const eachElementInSecondIsEven = secondArray.every(number => number % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(number => !number % 2 === 0);
+
+// const eachElementInThirdIsEven = thirdArray.every(number => number % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(number => number % 2 === 1);
+
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
+
+// Используя метод every() дополни код так, чтобы:
+
+// В переменной eachElementInFirstIsEven был результат проверки всех элементов массива firstArray на чётность.
+// В переменной eachElementInFirstIsOdd был результат проверки всех элементов массива firstArray на нечётность.
+// В переменной eachElementInSecondIsEven был результат проверки всех элементов массива secondArray на чётность.
+// В переменной eachElementInSecondIsOdd был результат проверки всех элементов массива secondArray на нечётность.
+// В переменной eachElementInThirdIsEven был результат проверки всех элементов массива thirdArray на чётность.
+// В переменной eachElementInThirdIsOdd был результат проверки всех элементов массива thirdArray на нечётность.
+
+// ========================= 31 ==============================
+// Дополни функцию isEveryUserActive(users) так,
+// чтобы она проверяла все ли пользователи сейчас активны(свойство isActive) и возвращала true или false.
+
+// const isEveryUserActive = users => {
+// 	return users.every(user => {
+// 		return user.isActive;
+// 	});
+// };
+
+// const isEveryUserActive = users => users.every(user => user.isActive);
+
+// console.log(isEveryUserActive(users));
+
+// ========================= 32 ==============================
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(number => number % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(number => number % 2 === 1);
+
+// const anyElementInSecondIsEven = secondArray.some(number => number % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(number => number % 2 === 1);
+
+// const anyElementInThirdIsEven = thirdArray.some(number => number % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(number => number % 2 === 1);
+
+// console.log(anyElementInFirstIsEven);
+// console.log(anyElementInFirstIsOdd);
+// console.log(anyElementInSecondIsEven);
+// console.log(anyElementInSecondIsOdd);
+// console.log(anyElementInThirdIsEven);
+// console.log(anyElementInThirdIsOdd);
+
+// ========================= 33 ==============================
+// Дополни функцию isAnyUserActive(users) так,
+// чтобы она проверяла наличие активных пользователей(свойство isActive) и возвращала true или false.
+
+// const isAnyUserActive = users => {
+// 	return users.some(user => {
+// 		return user.isActive;
+// 	});
+// };
+
+// const isAnyUserActive = users => {
+// 	return users.some(user => user.isActive);
+// };
+
+// const isAnyUserActive = users => users.some(user => user.isActive);
+
+// console.log(isAnyUserActive(users));
+
+// ========================= 34 ==============================
+
+// Игровому сервису необходим функционал подсчёта среднего времени проведённого в играх.
+//  Дополни код так, чтобы в переменной totalPlayTime получилось общее игровое время из массива playtimes.
+
+// const players = {
+// 	mango: 1270,
+// 	poly: 468,
+// 	ajax: 710,
+// 	kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// // const totalPlayTime = playtimes.reduce((acc, player) => {
+// // 	return acc + player;
+// // });
+
+// const totalPlayTime = playtimes.reduce((acc, player) => acc + player);
+// console.log(totalPlayTime);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(averagePlayTime);
+
+// Объявлена переменная players
+// Значение переменной players это объект игроков с игровым временем каждого
+// Объявлена переменная playtimes
+// Значение переменной playtimes это массив [1270, 468, 710, 244]
+// Объявлена переменная totalPlayTime
+// Значение переменной totalPlayTime это число 2692
+// Для перебора массива playtimes используется метод reduce()
+// Объявлена переменная averagePlayTime
+// Значение переменной averagePlayTime это число 673
+
+// ========================= 35 ==============================
+
+// Нашему сервису необходимо рассчитать среднее время проведённое в одной игре для каждого игрока,
+// 	и получить общую сумму этих времён.Рассчитать время для каждого из игроков,
+// 	можно разделив его время(свойство playtime) на количество игр(свойство gamesPlayed).
+
+// const players = [
+// 	{ name: "Mango", playtime: 1270, gamesPlayed: 4 },
+// 	{ name: "Poly", playtime: 469, gamesPlayed: 2 },
+// 	{ name: "Ajax", playtime: 690, gamesPlayed: 3 },
+// 	{ name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => total + player.playtime / player.gamesPlayed, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+// Объявлена переменная players
+// Значение переменной players это массив объектов игроков
+// Объявлена переменная totalAveragePlaytimePerGame
+// Значение переменной totalAveragePlaytimePerGame это число 1023
+// Для перебора массива players используется метод reduce()
+
+// ========================= 36 ==============================
+// Дополни функцию calculateTotalBalance(users) так, чтобы она считала и возвращала сумму всех
+// средств(свойство balance) которые хранят пользователи из массива users.
+
+// const calculateTotalBalance = users => users.reduce((total, user) => total + user.balance, 0);
+
+// console.log(calculateTotalBalance(users));
+
+// Объявлена переменная calculateTotalBalance
+// Переменной calculateTotalBalance присвоена стрелочная функция с параметром (users)
+// Для перебора параметра users используется метод reduce()
+// Вызов функции с указанным массивом пользователей возвращает число 20916
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
+// ========================= 37 ==============================
+
 const users = [
 	{
 		name: "Moore Hensley",
@@ -701,60 +959,239 @@ const users = [
 		age: 39,
 	},
 ];
-// Дополни функцию getActiveUsers(users) так, чтобы она возвращала массив активных пользователей,
-// значение свойства isActive которых true.
-// Change code below this line
-// const getActiveUsers = users => users.filter(user => !user.isActive);
-// // Change code above this line
-// console.log(getActiveUsers(users));
-// Объявлена переменная getActiveUsers Переменной getActiveUsers присвоена стрелочная функция с параметром users
-// Для перебора параметра users используется метод filter()
-// Вызов функции с указанным массивом пользователей возвращает массив объектов пользователей с
-// именами Sharlene Bush, Elma Head, Carey Barr и Sheree Anthony
+
+// Дополни функцию getTotalFriendCount(users) так,
+// чтобы она считала и возвращала общее количество друзей(свойство friends) всех пользователей из массива users.
+
+// const getTotalFriendCount = users => users.reduce((total, user) => total + user.friends.length, 0);
+
+// console.log(getTotalFriendCount(users));
+
+// Объявлена переменная getTotalFriendCount
+// Переменной getTotalFriendCount присвоена стрелочная функция с параметром (users)
+// Для перебора параметра users используется метод reduce()
+// Вызов функции с указанным массивом пользователей возвращает число 14
 // Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
 
-// ========================= 29 ==============================
+// ========================= 38 ==============================
 
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = ["Tanith Lee", "Bernard Cornwell", "Robert Sheckley", "Fyodor Dostoevsky"];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// // const ascendingReleaseDates = releaseDates.sort();
+
+// // const alphabeticalAuthors = authors.sort();
+
+// console.log(releaseDates);
+
+// console.log(ascendingReleaseDates);
+// console.log(authors);
+// console.log(alphabeticalAuthors);
+// ========================= 39 ==============================
+
+// Онлайн бибилиотеке необходимо отображать книги сортированные по дате издания,
+// 	по её возрастанию или убыванию.Дополни код так, чтобы в переменной ascendingReleaseDates получилась
+// 	 отсортированная по возрастанию копия массива releaseDates,
+// а в переменной descendingReleaseDates копия отсортированная по убыванию.
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
+// Объявлена переменная releaseDates
+// Значение переменной releaseDates это массив [2016, 1967, 2008, 1984, 1973, 2012, 1997]
+// Объявлена переменная ascendingReleaseDates
+// Значение переменной ascendingReleaseDates это массив [1967, 1973, 1984, 1997, 2008, 2012, 2016]
+// Объявлена переменная descendingReleaseDates
+// Значение переменной descendingReleaseDates это массив [2016, 2012, 2008, 1997, 1984, 1973, 1967]
+// Использован метод sort()
+
+// ========================= 40 ==============================
+
+// ========================= 41 ==============================
+// Дополни код так, чтобы:
+
+// В переменной sortedByAuthorName получился массив
+//  книг отсортированный по имени автора в алфавитном порядке.
+// В переменной sortedByReversedAuthorName получился массив книг отсортированный по имени автора
+// в обратном алфавитном порядке.
+// В переменной sortedByAscendingRating получился массив книг отсортированный по возрастанию рейтинга.
+// В переменной sortedByDescentingRating получился массив книг отсортированный по убыванию рейтинга.
+
+// const books = [
+// 	{
+// 		title: "The Last Kingdom",
+// 		author: "Bernard Cornwell",
+// 		rating: 8.38,
+// 	},
+// 	{
+// 		title: "Beside Still Waters",
+// 		author: "Robert Sheckley",
+// 		rating: 8.51,
+// 	},
+// 	{
+// 		title: "The Dream of a Ridiculous Man",
+// 		author: "Fyodor Dostoevsky",
+// 		rating: 7.75,
+// 	},
+// 	{ title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// 	{ title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((firstBook, secondBook) =>
+// 	firstBook.author.localeCompare(secondBook.author),
+// );
+
+// const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) =>
+// 	secondBook.author.localeCompare(firstBook.author),
+// );
+
+// const sortedByAscendingRating = [...books].sort((firstBook, secondBook) => firstBook.rating - secondBook.rating);
+
+// const sortedByDescentingRating = [...books].sort((firstBook, secondBook) => secondBook.rating - firstBook.rating);
+
+// console.table(books);
+
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
+
+//     Объявлена переменная books
+//     Значение переменной books это исходный массив объектов книг
+//     Объявлена переменная sortedByAuthorName
+//     Значение переменной sortedByAuthorName это массив книг отсортированный по имени автора в алфавитном порядке
+//     Объявлена переменная sortedByReversedAuthorName
+//     Значение переменной sortedByReversedAuthorName это массив книг отсортированный по имени автора в
+// 	 обратном алфавитном порядке
+//     Объявлена переменная sortedByAscendingRating
+//     Значение переменной sortedByAscendingRating это массив книг отсортированный по возрастанию рейтинга
+//     Объявлена переменная sortedByDescentingRating
+//     Значение переменной sortedByDescentingRating это массив книг отсортированный по убыванию рейтинга
+//     Для перебора массива books используется метод sort()
+
+// ========================= 42 ==============================
+
+// Дополни функцию sortByAscendingBalance(users) так,
+// чтобы она возвращала массив пользователей отсортированный по возрастанию их баланса(свойство balance).
+
+// const sortByAscendingBalance = users => {
+// 	return [...users].sort((firstUser, secondUser) => firstUser.balance - secondUser.balance);
+// };
+
+// const sortByAscendingBalance = users =>
+// 	[...users].sort((firstUser, secondUser) => firstUser.balance - secondUser.balance);
+
+// console.log(sortByAscendingBalance(users));
+// Объявлена переменная sortByAscendingBalance
+// Переменной sortByAscendingBalance присвоена стрелочная функция с параметром (users)
+// Значение параметра users не изменяется
+// Вызов функции с указанным массивом пользователей возвращает новый
+// массив пользователей отсортированный по возрастанию их баланса
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+// Для перебора параметра users использован метод sort()
+
+// ========================= 43 ==============================
+// Дополни функцию sortByDescendingFriendCount(users) так,
+// чтобы она возвращала массив пользователей отсортированный по убыванию количества их друзей(свойство friends).
+
+// const sortByDescendingFriendCount = users => {
+// 	return [...users].sort(
+// 		(firstUserFriends, secondUserFriends) => secondUserFriends.friends.length - firstUserFriends.friends.length,
+// 	);
+// };
+
+// const sortByDescendingFriendCount = users =>
+// 	[...users].sort(
+// 		(firstUserFriends, secondUserFriends) => secondUserFriends.friends.length - firstUserFriends.friends.length,
+// 	);
+
+// console.log(sortByDescendingFriendCount(users));
+// Объявлена переменная sortByDescendingFriendCount
+// Переменной sortByDescendingFriendCount присвоена стрелочная функция с параметром (users)
+// Значение параметра users не изменяется
+// Для перебора параметра users использован метод sort()
+// Вызов функции с указанным массивом пользователей возвращает новый массив
+// пользователей отсортированный по убыванию количества их друзей
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
+// ========================= 44 ==============================
+
+// Дополни функцию sortByName(users) так, чтобы она возвращала массив пользователей
+//  отсортированный по их имени(свойство name) в алфавитном порядке.
+
+// const sortByName = users => {
+// 	return [...users].sort((firstBookName, secondBookName) => firstBookName.name.localeCompare(secondBookName.name));
+// };
+
+// const sortByName = users =>
+// 	[...users].sort((firstBookName, secondBookName) => firstBookName.name.localeCompare(secondBookName.name));
+
+// console.log(sortByName(users));
+// console.log(users);
+// Объявлена переменная sortByName
+// Переменной sortByName присвоена стрелочная функция с параметром (users)
+// Значение параметра users не изменяется
+// Для перебора параметра users использован метод sort()
+// Вызов функции с указанным массивом пользователей возвращает новый массив пользователей
+//  отсортированный по имени в алфавитном порядке
+// Вызов функции со случайными, но валидными аргументами, возвращает правильное значение
+
+// ========================= 45 ==============================
+
+// Дополни код так, чтобы в переменной names получился массив имён авторов в алфавитном порядке,
+// 	рейтинг книг которых больше значения переменной MIN_BOOK_RATING.
+
+const books = [
+	{
+		title: "The Last Kingdom",
+		author: "Bernard Cornwell",
+		rating: 8.38,
+	},
+	{
+		title: "Beside Still Waters",
+		author: "Robert Sheckley",
+		rating: 8.51,
+	},
+	{
+		title: "The Dream of a Ridiculous Man",
+		author: "Fyodor Dostoevsky",
+		rating: 7.75,
+	},
+	{ title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+	{
+		title: "The Dreams in the Witch House",
+		author: "Howard Lovecraft",
+		rating: 8.67,
+	},
+];
+const MIN_BOOK_RATING = 8;
 // Change code below this line
 
-// Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя,
-// почта которого(свойство email) совпадает со значением параметра email.
+const names = books;
+//     Объявлена переменная books
+//     Значение переменной books это исходный массив объектов
+//     Объявлена переменная MIN_BOOK_RATING
+//     Значение переменной MIN_BOOK_RATING это число 8
+//     Объявлена переменная names
+//     Значение переменной names это массив ["Bernard Cornwell", "Howard Lovecraft", "Robert Sheckley"]
+//     Нет объявленых переменных кроме books, MIN_BOOK_RATING и names
+//     Используется цепочка методов filter, map, sort
 
-// const getUserWithEmail = (users, email) => users.find(book => book.email === email);
-
-// // Change code above this line
-
-// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
-// console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
-
-// ========================= 30 ==============================
-
-const firstArray = [26, 94, 36, 18];
-const secondArray = [17, 61, 23];
-const thirdArray = [17, 26, 94, 61, 36, 23, 18];
-// Change code below this line
-
-const eachElementInFirstIsEven = firstArray;
-const eachElementInFirstIsOdd = firstArray;
-
-const eachElementInSecondIsEven = secondArray;
-const eachElementInSecondIsOdd = secondArray;
-
-const eachElementInThirdIsEven = thirdArray;
-const eachElementInThirdIsOdd = thirdArray;
-
-// Используя метод every() дополни код так, чтобы:
-
-// В переменной eachElementInFirstIsEven был результат проверки всех элементов массива firstArray на чётность.
-// В переменной eachElementInFirstIsOdd был результат проверки всех элементов массива firstArray на нечётность.
-// В переменной eachElementInSecondIsEven был результат проверки всех элементов массива secondArray на чётность.
-// В переменной eachElementInSecondIsOdd был результат проверки всех элементов массива secondArray на нечётность.
-// В переменной eachElementInThirdIsEven был результат проверки всех элементов массива thirdArray на чётность.
-// В переменной eachElementInThirdIsOdd был результат проверки всех элементов массива thirdArray на нечётность.
-
-// ========================= # ==============================
-
-// ========================= # ==============================
+// ========================= 46 ==============================
+// ========================= 47 ==============================
+// ========================= 48 ==============================
 // const a = [1, 8, 2, 3, 42, 7, 4];
 // max = a[0];
 // for (let i = 0; i < a.length; i += 1) {
