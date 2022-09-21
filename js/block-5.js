@@ -130,9 +130,65 @@
 // =================================== 10 ====================================
 
 // =================================== 11 ====================================
+// class Storage {
+// 	constructor(items) {
+// 		this.items = items;
+// 	}
+// 	getItems() {
+// 		return this.items;
+// 	}
+// 	addItem(newItem) {
+// 		this.items.push(newItem);
+// 	}
+// 	removeItem(itemToRemove) {
+// 		// const idx = items.indexOf(itemToRemove);
 
+// 		if (this.items.includes(itemToRemove)) {
+// 			const idx = this.items.indexOf(itemToRemove);
+// 			this.items.splice(1, 1);
+// 		}
+// 	}
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 // =================================== 12 ====================================
 
+// Напиши класс StringBuilder, который принимает один параметр initialValue - произвольную строку,
+//     которая записывается на создаваемый объект в свойство value.
+
+// Объяви следующие методы класса:
+
+// getValue() - возвращает текущее значение свойства value.
+// padEnd(str) - получает парметр str(строку) и
+// добавляет её в конец значения свойства value объекта который вызывает этот метод.
+// padStart(str) - получает парметр str(строку) и
+// добавляет её в начало значения свойства value объекта который вызывает этот метод.
+// padBoth(str) - получает парметр str(строку) и
+// добавляет её в начало и в конец значения свойства value объекта который вызывает этот метод.
+class StringBuilder {
+	constructor(initialValue) {
+		this.value = "";
+	}
+	getValue() {
+		this.value;
+	}
+}
+
+// Change code above this line
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
 // =================================== 13 ====================================
 
 // =================================== 14 ====================================
